@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="482.0" prefWidth="648.0" style="-fx-background-color: #5e17eb;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="Documentation.DocumentationController">
+   <children>
+      <AnchorPane layoutY="69.0" prefHeight="496.0" prefWidth="648.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="96.0" fitWidth="84.0" layoutX="58.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@addvi.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="96.0" fitWidth="84.0" layoutX="58.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@EditVi.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="96.0" fitWidth="84.0" layoutX="58.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@DeleteVi.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="167.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD BUTTON" wrappingWidth="411.85546875">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="167.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pressing the Add Button, a new window will appear containing item name, category, quantity, and price fields. Item name field accepts letters &amp; number values, category only accept letters, quantity only accept whole numbers, and price accepts numbers and decimals." textAlignment="JUSTIFY" wrappingWidth="411.85546875" />
+            <Text layoutX="167.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EDIT BUTTON" wrappingWidth="411.85546875">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="167.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In order to click the Edit Button user first need to select a specific data to edit and a new window will appear containing id, item name, category, quantity, and price fields. ID field is not editable since it is unique to every data. Item name field accepts letters &amp; number values, category only accept letters, quantity only accept whole numbers, and price accepts numbers and decimals." textAlignment="JUSTIFY" wrappingWidth="411.85546875" />
+            <Text layoutX="167.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DELETE BUTTON" wrappingWidth="411.85546875">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="167.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In order to click the Delete Button, user first need to select specific data to delete." textAlignment="JUSTIFY" wrappingWidth="411.85546875" />
+            <Text layoutX="167.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SEARCH FIELD" wrappingWidth="411.85546875">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="167.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search for specific data in the table view, to show all the data back press the &quot;search&quot; button with blank search field" textAlignment="JUSTIFY" wrappingWidth="411.85546875" />
+            <ImageView fitHeight="96.0" fitWidth="84.0" layoutX="59.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Search.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Text fill="WHITE" layoutX="14.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Guide" wrappingWidth="411.85546875">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

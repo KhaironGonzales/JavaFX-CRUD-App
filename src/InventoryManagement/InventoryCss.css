@@ -1,0 +1,143 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Nov 15, 2024, 9:16:29 PM
+    Author     : Khai
+*/
+
+
+
+
+#addBut{
+    -fx-border-color: white;
+    -fx-background-color: transparent;
+    -fx-border-radius: 5px;
+    -fx-border-width: 5px;
+}
+
+#editBut{
+    -fx-border-color: white;
+    -fx-background-color: transparent;
+    -fx-border-radius: 5px;
+    -fx-border-width: 5px;
+}
+
+#delBut{
+    -fx-border-color: white;
+    -fx-background-color: transparent;
+    -fx-border-radius: 5px;
+    -fx-border-width: 5px;
+}
+
+#addBut:hover{
+    -fx-opacity: 80%;
+    -fx-cursor: hand;
+}
+#editBut:hover{
+    -fx-opacity: 80%;
+    -fx-cursor: hand;
+
+}
+#delBut:hover{
+    -fx-opacity: 80%;
+    -fx-cursor: hand;
+}
+
+#Logout{
+    -fx-border-color: white;
+    -fx-background-color: transparent;
+    -fx-border-radius: 5px;
+    -fx-border-width: 5px;
+}
+
+#Logout:hover{
+    /*    -fx-border-color: red;*/
+    -fx-opacity: 80%;
+    -fx-cursor: hand;
+
+}
+
+#canvas{
+    -fx-background-color: #2294fb;
+}
+
+#userTable{
+
+
+}
+
+#colId{
+/*    -fx-background-color: white;*/
+}
+#colName{
+/*    -fx-background-color: white;*/
+}
+#colCategory    {
+/*    -fx-background-color: white;*/
+}
+#colQuantity{
+/*    -fx-background-color: white;*/
+}
+#colPrice{
+/*    -fx-background-color: white;*/
+}
+#colSupplier{
+/*    -fx-background-color: white;*/
+}
+
+
+.table-view .column-header {
+
+
+}
+
+.table-view .scroll-bar:horizontal {
+    -fx-opacity: 0; /* Makes the scrollbar invisible */
+    -fx-max-height: 0; /* Prevents it from occupying space */
+}
+
+#searchBut{
+    -fx-text-fill: white;
+    -fx-border-radius: 3px;
+    -fx-border-color: #5e17eb;
+    -fx-background-color: #5e17eb;
+}
+
+#searchBut:hover{
+    -fx-opacity: 80%;
+    -fx-cursor: hand;
+}
+
+
+
+#searchField{
+    -fx-background-color: white;
+    -fx-effect: dropshadow(three-pass-box, rgb(0, 0, 0, 0.1), 1, 0, 0, 1);
+    -fx-border-radius: 3px;
+
+}
+#searchField:hover{
+    -fx-background-color: #FAFAF6;
+    -fx-transition: -fx-background-color 1s;
+    -fx-border-color: #5e17eb;
+}
+
+#settings{
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-border-radius: 5px;
+    -fx-border-width: 5px;
+    
+}
+
+#settings:hover{
+    /*    -fx-border-color: red;*/
+    -fx-opacity: 80%;
+    -fx-cursor: hand;
+
+}
+
+
+

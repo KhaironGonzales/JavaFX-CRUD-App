@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="518.0" prefWidth="796.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InventoryManagement.FXMLDocumentController">
+   <children>
+      <GridPane alignment="CENTER" prefHeight="518.0" prefWidth="850.0">
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints maxWidth="197.60001220703126" minWidth="0.0" prefWidth="0.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="804.0000068664551" minWidth="10.0" prefWidth="716.4" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <AnchorPane fx:id="canvas" prefHeight="518.0" prefWidth="128.0" style="-fx-background-color: #5e17eb;;" stylesheets="@InventoryCss.css">
+               <children>
+                  <GridPane alignment="CENTER" layoutX="12.0" layoutY="46.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="408.0" prefWidth="111.0" style="-fx-background-color: transparent;">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="317.79997558593755" minHeight="10.0" prefHeight="309.79997558593755" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <GridPane prefHeight="368.0" prefWidth="132.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="103.59998168945313" minHeight="10.0" prefHeight="85.9999755859375" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="173.8000244140625" minHeight="10.0" prefHeight="123.00000610351563" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="175.19998779296878" minHeight="10.0" prefHeight="92.19996337890626" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="175.19998779296878" minHeight="10.0" prefHeight="23.40003662109376" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Button fx:id="addBut" mnemonicParsing="false" onAction="#handleAddButtonClick" prefHeight="154.0" prefWidth="100.0">
+                                 <GridPane.margin>
+                                    <Insets left="15.0" right="10.0" />
+                                 </GridPane.margin>
+                                 <graphic>
+                                    <ImageView fx:id="addImg" fitHeight="50.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Icons/Add.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="editBut" mnemonicParsing="false" onAction="#handleEditButton" prefHeight="88.0" prefWidth="100.0" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="15.0" right="10.0" />
+                                 </GridPane.margin>
+                                 <graphic>
+                                    <ImageView fx:id="EditImg" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Icons/Edit.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="delBut" mnemonicParsing="false" onAction="#handleDeleteButtonClick" prefHeight="94.0" prefWidth="100.0" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="15.0" right="10.0" />
+                                 </GridPane.margin>
+                                 <graphic>
+                                    <ImageView fx:id="delImg" fitHeight="56.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Icons/delete.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+                  <GridPane layoutY="445.0" prefHeight="22.0" prefWidth="128.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Text fx:id="text" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="120.53670310974121">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </GridPane.margin>
+                        </Text>
+                     </children>
+                  </GridPane>
+                  <Button fx:id="Logout" layoutX="46.0" layoutY="476.0" mnemonicParsing="false" onAction="#handleLogoutButtonClick" prefHeight="30.0" prefWidth="23.0" stylesheets="@InventoryCss.css">
+                     <graphic>
+                        <ImageView fx:id="LogoutBut" fitHeight="16.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/Logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="settings" layoutX="35.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleUserGuideButton" prefHeight="30.0" prefWidth="23.0" stylesheets="@InventoryCss.css">
+                     <graphic>
+                        <ImageView fx:id="settingsBut" fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/settings.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="542.0" prefWidth="722.0" GridPane.columnIndex="2">
+               <children>
+                  <GridPane layoutY="2.0" prefHeight="518.0" prefWidth="722.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="227.60001220703126" minHeight="10.0" prefHeight="54.200009155273435" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="481.59999847412115" minHeight="10.0" prefHeight="463.79999084472655" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TableView fx:id="dataTable" prefHeight="490.0" prefWidth="722.0" stylesheets="@InventoryCss.css" GridPane.rowIndex="1">
+                           <columns>
+                              <TableColumn fx:id="colId" prefWidth="44.80004805326462" text="ID" />
+                              <TableColumn fx:id="colName" prefWidth="159.20001220703125" text="Item Name" />
+                              <TableColumn fx:id="colCategory" minWidth="0.0" prefWidth="121.5999755859375" text="Category" />
+                              <TableColumn fx:id="colQuantity" minWidth="0.0" prefWidth="121.60000610351562" text="Quantity" />
+                              <TableColumn fx:id="colPrice" minWidth="0.0" prefWidth="125.60003662109375" text="Price (₱)" />
+                              <TableColumn fx:id="colSupplier" minWidth="0.0" prefWidth="147.199951171875" text="Supplier" />
+                           </columns>
+                        </TableView>
+                        <AnchorPane prefHeight="71.0" prefWidth="722.0">
+                           <children>
+                              <TextField fx:id="searchField" layoutX="14.0" layoutY="14.0" onAction="#handleSearchButtonClick" prefHeight="26.0" prefWidth="389.0" promptText="Search a Product" stylesheets="@InventoryCss.css" />
+                              <Button fx:id="searchBut" layoutX="414.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleSearchButtonClick" stylesheets="@InventoryCss.css" text="Search" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
