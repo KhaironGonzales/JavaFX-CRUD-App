@@ -4,4 +4,5 @@ Things to Consider
 3. MySQL Database
 4. MySQL Jar Connector
 5. NetBeans Compiler
-   
+
+Just download the zip and extract it, once extracted open a new project in Netbeans and select the extracted folder.
